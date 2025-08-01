@@ -31,7 +31,9 @@ export default function RootLayout({
       >
         <Providers>
           <Header />
-          <main className="min-h-screen bg-gray-50">{children}</main>
+          <main className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 pt-16 lg:pt-20">
+            {children}
+          </main>
         </Providers>
       </body>
     </html>
