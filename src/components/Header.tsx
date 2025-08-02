@@ -131,21 +131,23 @@ export default function Header() {
               className="hamburger p-2 rounded-xl hover:bg-gray-100 transition-all duration-300"
               aria-label="Toggle mobile menu"
             >
-              <div className="w-6 h-6 flex flex-col justify-center items-center">
+              <div className="w-6 h-6 flex flex-col justify-center items-center relative">
                 <span
-                  className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ${
-                    isMobileMenuOpen ? "rotate-45 translate-y-1 bg-red-500" : ""
-                  }`}
-                ></span>
-                <span
-                  className={`block w-5 h-0.5 bg-gray-600 mt-1 transition-all duration-300 ${
-                    isMobileMenuOpen ? "opacity-0" : ""
-                  }`}
-                ></span>
-                <span
-                  className={`block w-5 h-0.5 bg-gray-600 mt-1 transition-all duration-300 ${
+                  className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ease-in-out transform origin-center ${
                     isMobileMenuOpen
-                      ? "-rotate-45 -translate-y-1 bg-red-500"
+                      ? "rotate-45 translate-y-1.5 bg-red-500"
+                      : ""
+                  }`}
+                ></span>
+                <span
+                  className={`block w-5 h-0.5 bg-gray-600 mt-1 transition-all duration-300 ease-in-out ${
+                    isMobileMenuOpen ? "opacity-0 scale-x-0" : ""
+                  }`}
+                ></span>
+                <span
+                  className={`block w-5 h-0.5 bg-gray-600 mt-1 transition-all duration-300 ease-in-out transform origin-center ${
+                    isMobileMenuOpen
+                      ? "-rotate-45 -translate-y-1.5 bg-red-500"
                       : ""
                   }`}
                 ></span>
