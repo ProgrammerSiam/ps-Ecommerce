@@ -70,14 +70,14 @@ export default function Home() {
                   <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                     Discover Our Collection
                   </h3>
-                  <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
+                  <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed line-clamp-2">
                     Explore our curated selection of premium products with
                     advanced filtering and personalized recommendations.
                   </p>
                 </div>
                 <Link
                   href="/products"
-                  className="inline-flex items-center space-x-3 bg-gray-900 text-white px-6 sm:px-8 py-4 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base lg:text-lg font-semibold"
+                  className="inline-flex items-center space-x-3  bg-gray-900 text-white px-6 sm:px-8 py-4 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base lg:text-lg font-semibold"
                 >
                   <span>Shop Now</span>
                   <svg
